@@ -1,0 +1,12 @@
+PUT http://localhost:4004/api/patients/5fc41268-5dd6-495f-8786-f6151c55beba
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "name": "Tin Than Hlaing Yu",
+    "address": "No. 123, Main Street, Ayeyarwady",
+    "email": "tinaungthan@gmail.com",
+    "dateOfBirth": "1990-01-03",
+    "registeredDate": "2024-06-02"
+    
+}

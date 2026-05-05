@@ -1,0 +1,12 @@
+### GET request to example server
+POST http://localhost:4004/auth/login
+#POST http://authservice.patient-management.local:4005
+Content-Type: application/json
+
+{
+  "email": "testuser@test.com",
+  "password": "password123"
+}
+> {% client.global.set("token",response.body.token) %}
+
+###

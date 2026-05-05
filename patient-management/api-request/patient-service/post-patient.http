@@ -1,0 +1,11 @@
+POST http://localhost:4004/api/patients
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "name": "Ye Thiha Kyaw Aung",
+  "address": "No. 11, Padauk Street, Shan State",
+  "email": "yeyethia@gmail.com",
+  "dateOfBirth": "2000-11-30",
+  "registeredDate": "2024-03-20"
+}
