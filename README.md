@@ -13,7 +13,6 @@
 **PatientSphere** is a high-performance, distributed healthcare management platform built using **Java 21** and **Spring Boot 3.x**. The system is architected to handle complex medical workflows by leveraging modern communication protocols, asynchronous event processing, and Clean Architecture principles.
 
 ## 🏗 System Architecture & Communication
-![System Flow Diagram]
 <img width="1000"  alt="Image" src="https://github.com/user-attachments/assets/91ebaa4a-f826-4ce8-81ef-f8dd856611c9" />
 
 *The diagram above illustrates the hybrid communication approach using gRPC for synchronous requests and Kafka for asynchronous event streaming.*
