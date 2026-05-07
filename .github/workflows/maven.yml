@@ -1,4 +1,4 @@
-name: Java CI with Maven
+name: Java CI for PatientSphere Ecosystem
 
 on:
   push:
@@ -12,13 +12,36 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    
-    - name: Set up JDK 17
+
+    - name: Set up JDK 21
       uses: actions/setup-java@v4
       with:
         java-version: '21'
         distribution: 'temurin'
         cache: maven
-        
-    - name: Build with Maven
-      run: mvn -B package --file pom.xml
+
+    # 1. Patient Service Build
+    - name: Build Patient Service
+      run: mvn -B package --file patient-management/patient-service/pom.xml -DskipTests
+
+    # 2. Billing Service Build
+    - name: Build Billing Service
+      run: mvn -B package --file billing-management/billing-service/pom.xml -DskipTests
+
+    # 3. Analytic Service Build
+    - name: Build Analytic Service
+      run: mvn -B package --file notification-infrastructure/analytic-service/pom.xml -DskipTests
+
+    # 4. Auth Service Build
+    - name: Build AuthService
+      run: mvn -B package --file billing-management/auth-service/pom.xml -DskipTests
+      
+     # 5.Api-Gateway Build
+    - name: Build Api-Gateway
+      run: mvn -B package --file billing-management/api-gateway/pom.xml -DskipTests
+
+     # 6.Integration-test  Build
+    - name: Build Integration-Tes
+      run: mvn -B package --file billing-management/integration-test/pom.xml -DskipTests
+
+   
