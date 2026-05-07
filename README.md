@@ -7,6 +7,7 @@
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=json-web-tokens&logoColor=white)
+![Java CI](https://github.com/kaunghtetzaw139432/Event-Driven-Healthcare-Microservices-Ecosystem/actions/workflows/maven.yml/badge.svg)
 
 ---
 
