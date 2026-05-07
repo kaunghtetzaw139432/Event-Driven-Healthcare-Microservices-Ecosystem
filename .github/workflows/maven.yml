@@ -26,22 +26,22 @@ jobs:
 
     # 2. Billing Service Build
     - name: Build Billing Service
-      run: mvn -B package --file billing-management/billing-service/pom.xml -DskipTests
+      run: mvn -B package --file  patient-management/billing-service/pom.xml -DskipTests
 
     # 3. Analytic Service Build
     - name: Build Analytic Service
-      run: mvn -B package --file notification-infrastructure/analytic-service/pom.xml -DskipTests
+      run: mvn -B package --file  patient-management/analytic-service/pom.xml -DskipTests
 
     # 4. Auth Service Build
     - name: Build AuthService
-      run: mvn -B package --file billing-management/auth-service/pom.xml -DskipTests
+      run: mvn -B package --file  patient-management/auth-service/pom.xml -DskipTests
       
      # 5.Api-Gateway Build
     - name: Build Api-Gateway
-      run: mvn -B package --file billing-management/api-gateway/pom.xml -DskipTests
+      run: mvn -B package --file  patient-management/api-gateway/pom.xml -DskipTests
 
      # 6.Integration-test  Build
     - name: Build Integration-Tes
-      run: mvn -B package --file billing-management/integration-test/pom.xml -DskipTests
+      run: mvn -B package --file  patient-management/integration-test/pom.xml -DskipTests
 
    
